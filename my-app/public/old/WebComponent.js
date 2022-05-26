@@ -53,11 +53,13 @@ Rpm = {};
 		},
 
 		/*
-			Connect the UI element's events, usually this means 
+			Connect the UI element's events, usually this means
 			eventually firing one of the Component's events.
 		*/
 		connectComponentUI: function () { },
 
 	});
-	
+
 })();
+
+

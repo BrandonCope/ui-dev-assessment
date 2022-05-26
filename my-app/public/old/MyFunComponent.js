@@ -1,5 +1,8 @@
+// import { useComponentContext } from "../../src/components/new";
+
 (function() {
     'use strict';
+    // const {setNumber} = useComponentContext()
     var MyFunComponent = new Class({
         Extends: Rpm.WebComponent,
         componentName: 'MyFunComponent',
@@ -15,6 +18,7 @@
                 this.el.link2,
                 this.el.link3,
                 this.el.info
+
             ];
         },
         buildButton: function(text) {
@@ -36,6 +40,7 @@
         },
         setText: function(text) {
             this.el.info.set('text', text);
+            this.text
         }
     });
 
@@ -45,5 +50,7 @@
         });
         funComponent.renderInside($('old'));
     });
-    
+
 })();
+
+// export default MyFunComponent
